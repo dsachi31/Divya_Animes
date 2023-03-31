@@ -1,0 +1,95 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'cambria';
+    box-sizing: border-box;
+}
+.anime{
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns:150px 150px 150px 150px 150px  ;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    row-gap: 20px; 
+    column-gap:12%;
+    background-color: black;
+    margin:auto;
+    padding:40px 20px 5px ;
+}
+.anim{
+    width:100%;
+    height:auto;
+    background:-webkit-repeating-linear-gradient(45deg,black, black,red);
+    border-width: 5px;
+    border-color:yellow;
+    border-style:dotted;
+    text-align: center;
+    font-size: 10px;
+    padding:13%;
+    color:white;
+    /* row-gap:20px; */
+    /* column-gap: 20px; */
+    border-radius: 20px;
+    top:0px;
+    margin:auto;  
+}
+nav{
+    background: -webkit-repeating-linear-gradient(45deg,black,red);
+    width:100%;
+    height:auto;
+    top:0px;
+    font-family: 'Snap ITC';
+    font-size: 50px;
+    color:white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+img{
+    height:100%;
+    width:100%;
+}
+@media (max-width : 600px)
+{
+    .anime{
+        width:100%;
+        height:auto;
+        display:grid;
+        grid-template-columns:auto ;
+        /* display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap; */
+    }
+
+    .anim{
+        width:50%;
+        height:auto;
+        background:-webkit-repeating-linear-gradient(45deg,black, black,red);
+        border-width: 5px;
+        border-color:yellow;
+        border-style:dotted;
+        text-align: center;
+        font-size: 10px;
+        color:white;
+        border-radius: 20px;
+        /* top:0px; */
+        margin:auto; 
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        height:100%;
+        width:100%;
+    }
+    nav{
+        font-size:100%;
+        font-family: 'Snap ITC';
+    }   
+}
